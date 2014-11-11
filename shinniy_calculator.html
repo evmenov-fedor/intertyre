@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/scrollToUp.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
+    <!--<!--[if lt IE 9]>-->
+    <script src="js/html5.js"></script>
+    <script src="jquery.cycle2.min.js"  type="text/javascript"></script>
+    <script src="jquery.cycle2.carousel.js"  type="text/javascript"></script>
+    <script src="main.js"  type="text/javascript"></script>
+
+    <script src="ajaxform.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js" ></script>
+
+
+
+
+    <meta charset="UTF-8">
+    <title>Интертайр</title>
+</head>
+<body class="calculate">
+<div class="page">
+    <div class="layout wide">
+        <div class="header">
+            <div class="header-board">
+                <div class="row b-hat smaller">
+                    <div class="cell5">
+                        <div class="cell5__l">
+                            <span class="b"><a href="#">О компании</a></span>
+                            <div class="borderdiv"></div>
+                        </div>
+                    </div>
+                    <div class="cell5">
+                        <div class="cell5__l">
+                            <span class="b"><a href="#">Каталог</a></span>
+                        </div>
+                    </div>
+                    <div class="cell5 c">
+                        <a href="index.html">  <div class="logo">
+                            <!--<img src="image/logo.png">-->
+                            <!--<img class="logo-index" src="image/logo.png" />-->
+                            <!--<img class="logo-hover" src="image/logo_hover.png" />-->
+
+                        </div></a>
+                    </div>
+                    <div class="cell5">
+                        <div class="cell5__r">
+                            <span class="b"><a href="#">Скачать прайс-лист</a></span>
+                        </div>
+                    </div>
+                    <div class="cell5">
+                        <div class="cell5__r">
+                            <span class="b"><a href="#">Контакты</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="path">Шинный калькулятор</div>
+        <br />
+
+        <p>
+            <strong>Для чего нужен шинный калькулятор: </strong>
+        </p>
+        <p>
+            С помощью этого шинного калькулятора вы легко можете  посчитать как изменятся: внешние размеры колеса, высота дорожного  просвета (клиренс), показания спидометра и другие характеристики, при  установке шин с другим типоразмером на ваш автомобиль.
+        </p>
+        <p>
+            <strong>Как пользоваться:</strong>
+        </p>
+        <p>
+            Введите сначала типоразмер установленный на вашем автомобиле, а затем тот, который вы хотите установить и нажмите «рассчитать». В таблице снизу будут показаны результаты расчетов.
+        </p>
+
+        <div>
+            <div class="kalkulator-content">
+                <div class="kalkulator-header">
+                    <div class="kalkulator-img"><img src="image/calk.jpg"  width="267" height="210" alt="" border="0" /></div>
+
+                    <fieldset class="select-col">
+                        <ul>
+                            <li>
+                                <label class="f">Старый размер:</label>
+                                <select name="oldWidth" id="oldWidth">
+                                    <option value="145">145</option>
+                                    <option value="155">155</option>
+                                    <option value="165">165</option>
+                                    <option value="175" SELECTED>175</option>
+                                    <option value="185">185</option>
+                                    <option value="195">195</option>
+                                    <option value="205">205</option>
+                                    <option value="215">215</option>
+                                    <option value="225">225</option>
+                                    <option value="235">235</option>
+                                    <option value="245">245</option>
+                                    <option value="255">255</option>
+                                    <option value="265">265</option>
+                                    <option value="275">275</option>
+                                    <option value="285">285</option>
+                                    <option value="295">295</option>
+                                    <option value="305">305</option>
+                                    <option value="315">315</option>
+                                    <option value="325">325</option>
+                                </select>
+                                <label>/</label>
+                            </li>
+                            <li>
+                                <select name="oldProfile" id="oldProfile">
+                                    <option value="0">&mdash;</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                    <option value="45">45</option>
+                                    <option value="50">50</option>
+                                    <option value="55">55</option>
+                                    <option value="60">60</option>
+                                    <option value="65">65</option>
+                                    <option value="70" SELECTED>70</option>
+                                    <option value="75">75</option>
+                                    <option value="80">80</option>
+                                    <option value="85">85</option>
+                                </select>
+                                <label>R</label>
+                            </li>
+                            <li>
+                                <select name="oldRadius" id="oldRadius">
+                                    <option value="12">12</option>
+                                    <option value="13" SELECTED>13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                </select>
+
+                        </ul>
+                        <ul>
+                            <li>
+                                <label class="f">Новый размер:</label>
+                                <select name="newWidth" id="newWidth">
+                                    <option value="145">145</option>
+                                    <option value="155">155</option>
+                                    <option value="165">165</option>
+                                    <option value="175" SELECTED>175</option>
+                                    <option value="185">185</option>
+                                    <option value="195">195</option>
+                                    <option value="205">205</option>
+                                    <option value="215">215</option>
+                                    <option value="225">225</option>
+                                    <option value="235">235</option>
+                                    <option value="245">245</option>
+                                    <option value="255">255</option>
+                                    <option value="265">265</option>
+                                    <option value="275">275</option>
+                                    <option value="285">285</option>
+                                    <option value="295">295</option>
+                                    <option value="305">305</option>
+                                    <option value="315">315</option>
+                                    <option value="325">325</option>
+                                </select>
+                                <label>/</label>
+                            </li>
+                            <li>
+                                <select name="newProfile" id="newProfile">
+                                    <option value="0">&mdash;</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                    <option value="45">45</option>
+                                    <option value="50">50</option>
+                                    <option value="55">55</option>
+                                    <option value="60">60</option>
+                                    <option value="65">65</option>
+                                    <option value="70" SELECTED>70</option>
+                                    <option value="75">75</option>
+                                    <option value="80">80</option>
+                                    <option value="85">85</option>
+                                </select>
+                                <label>R</label>
+                            </li>
+                            <li>
+                                <select name="newRadius" id="newRadius">
+                                    <option value="12">12</option>
+                                    <option value="13" SELECTED>13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                </select>
+
+                        </ul>
+
+                        <label class="f">&nbsp;</label>
+                        <input type="image" src="image/btn-calk.png"  class="search-btn" onClick="calculate(); return false;">
+                    </fieldset>
+
+                    <div class="clear"></div>
+                </div>
+
+
+                <div align="center">
+                    <table class="kalkulator" align="center">
+                        <tr>
+                            <th class="cleft"><strong>Размер</strong></th>
+                            <th><strong>Старый</strong></th>
+                            <th><b>Новый</b></th>
+                            <th><b>Сравнение</b></th>
+                        </tr>
+                        <tr>
+                            <td class="cleft">Ширина шины, мм(A)</td>
+                            <td id="oldA">&nbsp;</td>
+                            <td id="newA">&nbsp;</td>
+                            <td id="difA">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="cleft">Высота профиля, мм(B)</td>
+                            <td id="oldB">&nbsp;</td>
+                            <td id="newB">&nbsp;</td>
+                            <td id="difB">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="cleft">­Внутренний диаметр, мм (C)</td>
+                            <td id="oldC">&nbsp;</td>
+                            <td id="newC">&nbsp;</td>
+                            <td id="difC">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="cleft">Внешний диаметр, мм (D)</td>
+                            <td id="oldD">&nbsp;</td>
+                            <td id="newD">&nbsp;</td>
+                            <td id="difD">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4" class="cleft"><b>Спидометр</b></th>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="cleft">Показания спидометра (км/ч)</td>
+                            <td><input type="text" size="4" value="90" id="oldSpeed" onChange="calculate();"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="cleft">Реальная скорость (км/ч)</td>
+                            <td id="newSpeed">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="cleft">Разница (км/ч)</td>
+                            <td id="difSpeed">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="cleft"><b>Изменение клиренса (мм)</b></td>
+                            <td id="difClearense">&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+
+        <div>
+            <div class="kalkulator_pic"></div>
+            <div class="kalkulator-content">
+                <h3>Расчет ширины диска</h3>
+
+                <p>
+                    При подборе дисков для вашего автомобиля необходимо точно знать  минимальную и максимальную ширину диска подходящую для данного  типоразмера шины. Для расчета ширины диска вы можете воспользоваться  этим разделом.
+                </p>
+
+                <fieldset class="select-col center">
+                    <ul>
+                        <li>
+                            <label>Введите типоразмер:</label>
+                            <select name="paramWidth" id="paramWidth">
+                                <option value="145">145</option>
+                                <option value="155">155</option>
+                                <option value="165">165</option>
+                                <option value="175" SELECTED>175</option>
+                                <option value="185">185</option>
+                                <option value="195">195</option>
+                                <option value="205">205</option>
+                                <option value="215">215</option>
+                                <option value="225">225</option>
+                                <option value="235">235</option>
+                                <option value="245">245</option>
+                                <option value="255">255</option>
+                                <option value="265">265</option>
+                                <option value="275">275</option>
+                                <option value="285">285</option>
+                                <option value="295">295</option>
+                                <option value="305">305</option>
+                                <option value="315">315</option>
+                                <option value="325">325</option>
+                            </select>
+                            <label>/</label>
+                        </li>
+                        <li>
+                            <select name="paramProfile" id="paramProfile">
+                                <option value="0">&mdash;</option>
+                                <option value="25">25</option>
+                                <option value="30">30</option>
+                                <option value="35">35</option>
+                                <option value="40">40</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                                <option value="55">55</option>
+                                <option value="60">60</option>
+                                <option value="65">65</option>
+                                <option value="70" SELECTED>70</option>
+                                <option value="75">75</option>
+                                <option value="80">80</option>
+                                <option value="85">85</option>
+                            </select>
+                            <label>R</label>
+                        </li>
+                        <li>
+                            <select name="paramRadius" id="paramRadius">
+                                <option value="12">12</option>
+                                <option value="13" SELECTED>13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+                        </li>
+                        <li><input type="image" src="image/btn-calk.png"  class="search-btn" onClick="calculateWidth(); return false;"></li>
+                    </ul>
+
+                </fieldset>
+                <div class="clear"></div>
+                <div align="center">
+                    <table class="kalkulator-size" align="center">
+                        <tr>
+                            <th class="cleft"><strong> Параметры диска</strong></th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <td class="cleft">Диаметр диска, дюймы</td>
+                            <td id="resultDiameter">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="cleft">Минимальная ширина диска, дюймы</td>
+                            <td id="resultWidthMin">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="cleft">­Максимальная ширина диска, дюймы</td>
+                            <td id="resultWidthMax">&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+        </div>
+
+    </div>
+    <script src="calculator.js" type="text/javascript"></script>
+    </section>
+    <section class="fslider">
+        <div class="page">
+            <div class="controls">
+                <a href="" class="prev"></a>
+                <a href="" class="next"></a>
+            </div>
+
+
+    <div class="footer">
+            <div class="name_footer">
+                <div class="contact_footer">   Связаться с нами       </div>
+            </div>
+            <div></div>
+
+            <div class="content_contacts">
+                <div class="contacts">
+                    <span class="name_blocks1">Наши менеджеры</span><br>
+                    <span>(017) 387-01-63</span><br/>
+                    <span>(017) 387-01-65 </span><br/>
+                    <span>(017) 387-01-67</span><br/>
+                    <span>(029) 220-25-58 MTC</span><br/>
+                    <span>(044) 504-50-51 Velcom</span>
+                </div>
+                <div class="contacts secondary">
+                    <span class="name_blocks2">Наш Адрес</span><br>
+                    </span>г. Минск<br>
+                    ул. Машиностроителей, 29<br>
+                    офис 403.</span>
+                </div>
+                <div class="contacts secondary">
+                    <span class="name_blocks3">Полезные ссылки</span><br>
+                    </span><a href="#">Реквизиты компании</a></p><br>
+                    </span><a href="#">Прайс-лист</a></span>
+                </div>
+            </div>
+            <!--<div class="address"></div>-->
+            <!--<div class="helplinks"></div>-->
+        </div>
+    </div>
+    <div id="scrollup"><img alt="Прокрутить вверх" src="image/arrow_down.png"></div>
+</div>
+</body>
+</html>
