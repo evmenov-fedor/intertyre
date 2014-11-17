@@ -681,10 +681,7 @@ select, input[type=text] {  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.3);
     padding: 5px;
     border-radius: 3px;
 }
-.kalkulator-header {
-    /*background-color:#e5e5e5;*/
-    padding:10px
-}
+
 .kalkulator-img {float:left; padding-right:40px}
 .select-col {padding-top:50px}
 .select-col label {
@@ -708,7 +705,28 @@ select, input[type=text] {  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.3);
     border-radius: 3px;
 }
 .kalkulator-content h3 {text-transform:uppercase}
+.path{
+    text-align: center;
+    font-family: "HelveticaNeueLTStd45Light", Helvetica, Arial;
+    font-size: 22pt;
+    font-weight: bold;
+    margin-top: 25px;
 
+}
+
+.content_text{
+    width: 1040px;
+    text-align: justify;
+    margin-left: 230px;
+    padding: 15px;
+}
+
+.kalkulator-header {
+     /*background-color:#e5e5e5;*/
+    width: 1040px;
+    margin-left: 235px;
+     padding:10px;
+ }
 body{
     margin:0;
     padding:0;
