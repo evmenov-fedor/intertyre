@@ -5,6 +5,7 @@ table, table td {padding:0;border:none;border-collapse:collapse}
 a { outline:none; cursor: pointer; }
 img{ border: none;}
 li {list-style: none;}
+input,textarea,select,button{font-family:inherit;font-size:inherit;font-weight:inherit; }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary {
     display: block;
@@ -676,14 +677,19 @@ img {
 
 /*-----------------------КАЛЬКУЛЯТОР---------------------------*/
 select, input[type=text] {  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.3);
-    border: 1px solid #b7b7b7;
+    /*border: 1px solid #b7b7b7;*/
     padding: 5px;
     border-radius: 3px;
 }
-.kalkulator-header { background-color:#e5e5e5; padding:10px}
+.kalkulator-header {
+    /*background-color:#e5e5e5;*/
+    padding:10px
+}
 .kalkulator-img {float:left; padding-right:40px}
 .select-col {padding-top:50px}
-.select-col label {color:#141414; font-size:15px; display:inline-block}
+.select-col label {
+    color:#141414;
+    font-size:15px; display:inline-block}
 .select-col label.f {width:119px}
 .select-col ul {list-style-type:none; margin:0; padding:0}
 .select-col ul li  {list-style-type:none; margin:0; padding:0; float:left; display:block}
@@ -692,7 +698,9 @@ select, input[type=text] {  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.3);
 .select-col.center input[type=image] {margin-left:10px; margin-top:-2px}
 
 .kalkulator-content table {width:100%; margin-top:40px; margin-bottom:35px; border-top:1px solid #a6a6a6}
-.kalkulator-content table th {background-color:#efefef; padding:15px 20px; color:#141414}
+.kalkulator-content table th {
+    /*background-color:#efefef; */
+    padding:15px 20px; color:#141414}
 .kalkulator-content table td {padding:10px 20px; color:#141414; border-bottom:1px solid #a6a6a6; vertical-align:middle}
 .kalkulator-content table td input[type=text] {  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.3);
     border: 1px solid #b7b7b7;
@@ -707,7 +715,7 @@ body{
     font-family: arial, sans-serif;
     font-size: 14px;
     color: #636363;
-    background: #e0e0e0;
+    /*background: #e0e0e0;*/
 }
 
 a {
